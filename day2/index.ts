@@ -5,7 +5,7 @@ const dummyData = `7 6 4 2 1
 8 6 4 4 1
 1 3 6 7 9`;
 
-const badReport = (report, tolerate, startPoint) => {
+export const badReport = (report, tolerate, startPoint) => {
   for (let i = startPoint; i < report.length; i++) {
     const diff = report[i] - report[i - 1];
     if (Math.abs(diff) > 3 || (report[i - 1] - report[i - 2]) * diff <= 0) {

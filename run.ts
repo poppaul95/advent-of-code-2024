@@ -45,7 +45,7 @@ switch (level) {
     levelOneSolution = module.levelOne(data);
     break;
   case "2":
-    levelOneSolution = module.levelTwo(data);
+    levelTwoSolution = module.levelTwo(data);
     break;
   default:
     levelOneSolution = module.levelOne(data);
